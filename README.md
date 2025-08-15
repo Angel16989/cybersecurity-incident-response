@@ -1,38 +1,49 @@
-# Cybersecurity Incident Response Platform
+# Endpoint Management Project - Greenlight MSP
 
-AI-powered enterprise security platform for threat detection and automated incident response.
+Learning and implementing device management solutions at Greenlight MSP using Microsoft Intune and Endpoint Central.
 
-## Live Demo
-🔐 **[Security Dashboard](https://cyberdefense.rasiktiwari.com)**
+## Project Background
+- **Company:** Greenlight MSP
+- **Role:** IT Support Technician
+- **Challenge:** Managing client devices remotely and efficiently  
+- **Learning Goal:** Master modern endpoint management tools
 
-*Note: Demo uses sanitized data for security purposes*
+## What I'm Working With
+- **Microsoft Intune** - Device enrollment and policy management
+- **Endpoint Central** - Remote support and troubleshooting
+- **Hyper-V** - Testing lab for different configurations
+- **PowerShell** - Automation scripts (still learning!)
+- **Microsoft 365** - User and device integration
 
-## Key Features
-- ✅ AI/ML threat detection (4.2min MTTD)
-- ✅ SIEM integration (Splunk, QRadar)
-- ✅ Automated response workflows
-- ✅ Real-time threat intelligence
-- ✅ SOC2/ISO27001 compliance
-- ✅ Forensic analysis tools
+## Daily Tasks at Greenlight MSP
+- ✅ Enroll client devices into Intune management
+- ✅ Configure compliance policies for different client requirements
+- ✅ Use Endpoint Central for remote troubleshooting
+- ✅ Create basic PowerShell scripts for routine tasks
+- ✅ Document processes for other team members
 
-## Tech Stack
-- **Languages:** Python, Go, JavaScript
-- **ML/AI:** TensorFlow, Scikit-learn
-- **Security:** Nmap, Wireshark, Metasploit
-- **Cloud:** AWS GuardDuty, Azure Sentinel
-- **SIEM:** Splunk, IBM QRadar
+## PowerShell Scripts I'm Learning
+```powershell
+# Get device compliance status
+Get-IntuneManagedDevice | Select-Object DeviceName, ComplianceState, LastSyncDateTime
 
-## Impact Metrics
-- **$2.5M** in prevented losses
-- **47** major breaches prevented in 2024
-- **99.7%** threat coverage
-- **<2%** false positive rate
+# Check Windows Update status
+Get-WUList | Where-Object {$_.Size -gt 0}
 
-## Business Value
-- 73% reduction in response time
-- Zero data breaches since implementation
-- SOC2 Type II compliance achieved
-- 40% cost reduction in security operations
+# Export device inventory
+Get-ComputerInfo | Export-Csv -Path "DeviceInventory.csv"
+```
+
+## Real-World Experience
+- Managing devices for 20+ SMB clients at Greenlight MSP
+- Learning to balance security requirements with user productivity
+- Troubleshooting connectivity issues and policy conflicts
+- Building documentation and training materials
+
+## Files Available
+- 📄 **Device_Management_Report.docx** - Monthly client device status
+- 📋 **PowerShell_Scripts.docx** - Collection of useful automation scripts
+- 📊 **Policy_Templates.docx** - Standard Intune policies we use
 
 ---
-*Built by Rasik Tiwari - Cybersecurity Professional*
+*Hands-on learning experience at Greenlight MSP managing real client environments and developing practical IT skills.*
